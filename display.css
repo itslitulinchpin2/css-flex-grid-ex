@@ -1,7 +1,7 @@
 div,span{
     width: 80px;
     height: 80px;
-    margin:20px;
+    margin-bottom:20px;
 }
 
 div{
@@ -12,4 +12,18 @@ span{
     background: blue;
     display: inline-block;
 
+}
+
+.container {
+    background: yellow;
+    left:20px;
+    top:20px;
+    position:relative
+}
+
+.box{
+    background:aqua;
+    left:20px;
+    top:20px;
+    position:relative;
 }
