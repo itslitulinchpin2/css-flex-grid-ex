@@ -102,3 +102,63 @@
     padding:2em;
     border-radius: 1em;
 }
+
+
+
+.card-item{
+    margin-bottom:2rem;
+    display: flex;
+    flex-direction: column;
+
+}
+
+.card-image{
+    background-color: lightgray;
+    height: 0;
+    padding-bottom: 60%;
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+    
+}
+.card-image img{
+    display: none;
+}
+.card-desc{
+    background: white;
+    padding:1em; 
+    flex-grow: 1;
+}
+
+
+@media(min-width:600px){
+    .card-list-container{
+        overflow-x: hidden;
+    }
+    .card-list{
+        margin: 0 -1rem;
+        display: flex;
+        flex-wrap: wrap;
+        /* justify-content: space-between; */
+    }
+    .card-item{
+        padding: 0 1rem;
+        width:50%
+    }
+}
+
+@media(min-width:1000px){
+    .card-list-container{
+        overflow-x: hidden;
+    }
+    .card-list{
+        margin: 0 -1rem;
+        display: flex;
+        flex-wrap: wrap;
+        /* justify-content: space-between; */
+    }
+    .card-item{
+        padding: 0 1rem;
+        width:33.3333%
+    }
+}
