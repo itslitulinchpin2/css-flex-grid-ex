@@ -9,26 +9,36 @@
         .grid-container{
             display:grid;
             /* grid-template-columns: 100px 300px 200px; */
-            grid-template-columns: 1fr 1fr 1fr;
-
+            /* grid-template-columns: 1fr 1fr 1fr;
+            grid-template-rows: repeat(3, minmax(100px,auto)); */
             /* grid-template-rows:repeat(3,1fr); */
-            height: 80vh;
+            /* height: 80vh; */
+            grid-template-columns: repeat(auto-fill,minmax(30%,auto));
+            gap:20px;
         }
         .grid-item{
             /* display:inline; */
+        }
+        .grid-item:nth-child(1){
+            grid-column: 1/3;
+            grid-row: 1/4;
+        }
+        .grid-item:nth-child(4){
+            grid-column: 3;
+            grid-row: 3/5;
         }
     </style>
 </head>
 <body>
     <div class="grid-container">
-        <div class="grid-item">A</div>
+        <div class="grid-item">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Quis, autem.</div>
         <div class="grid-item">B</div>
         <div class="grid-item">C</div>
-        <div class="grid-item">D</div>
+        <div class="grid-item">Lorem ipsum dolor sit amet consectetur adipisicing elit. Quo maiores enim quibusdam deserunt mollitia.</div>
         <div class="grid-item">E</div>
         <div class="grid-item">F</div>
         <div class="grid-item">G</div>
-        <div class="grid-item">H</div>
+        <div class="grid-item">Lorem ipsum dolor sit, amet consectetur adipisicing.</div>
         <div class="grid-item">I</div>
     </div>
 </body>
